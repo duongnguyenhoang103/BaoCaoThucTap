@@ -77,7 +77,7 @@ namespace DeMoQLSV1
         {
             int vt = dgvTaiKhoan.CurrentCell.RowIndex;
             string key = dgvTaiKhoan.Rows[vt].Cells["TaiKhoan"].Value.ToString().Trim();        
-            if (DialogResult.Yes == MessageBox.Show("bạn có chắc muốn sửa tài khoản" + txtTaiKhoan.Text + "hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("bạn có chắc muốn sửa tài khoản " + txtTaiKhoan.Text + " hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 tk.UpdateTK(key,txtTaiKhoan.Text,txtMatKhau.Text);
                 loadData();
@@ -103,7 +103,7 @@ namespace DeMoQLSV1
             bool check = tk.CheckTK(key);
             if (!check)
             {
-                if (DialogResult.Yes == MessageBox.Show("bạn có chắc muốn thêm tài khoản" + txtTaiKhoan.Text + "hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (DialogResult.Yes == MessageBox.Show("bạn có chắc muốn thêm tài khoản  "+ txtTaiKhoan.Text + "  hay không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     tk.InsertTK(txtTaiKhoan.Text.Trim(), txtMatKhau.Text.Trim());
                     loadData();
