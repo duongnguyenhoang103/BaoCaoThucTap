@@ -1,0 +1,55 @@
+C:\Documents and Settings\AngelPaby\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\BusinessEntity.dll
+C:\Documents and Settings\AngelPaby\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\BusinessEntity.pdb
+C:\Documents and Settings\AngelPaby\Desktop\DeMoQLSV1\BusinessEntity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\AngelPaby\Desktop\DeMoQLSV1\BusinessEntity\obj\Debug\BusinessEntity.dll
+C:\Documents and Settings\AngelPaby\Desktop\DeMoQLSV1\BusinessEntity\obj\Debug\BusinessEntity.pdb
+C:\Documents and Settings\AngelPaby\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\AccessData.dll
+C:\Documents and Settings\AngelPaby\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\AccessData.pdb
+G:\DeMoQLSV1\BusinessEntity\bin\Debug\BusinessEntity.dll
+G:\DeMoQLSV1\BusinessEntity\bin\Debug\BusinessEntity.pdb
+G:\DeMoQLSV1\BusinessEntity\bin\Debug\AccessData.dll
+G:\DeMoQLSV1\BusinessEntity\bin\Debug\AccessData.pdb
+G:\DeMoQLSV1\BusinessEntity\obj\Debug\ResolveAssemblyReference.cache
+G:\DeMoQLSV1\BusinessEntity\obj\Debug\BusinessEntity.dll
+G:\DeMoQLSV1\BusinessEntity\obj\Debug\BusinessEntity.pdb
+C:\Documents and Settings\AngelPaby\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\BusinessEntity.dll.config
+C:\Users\duong\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\BusinessEntity.dll.config
+C:\Users\duong\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\BusinessEntity.dll
+C:\Users\duong\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\BusinessEntity.pdb
+C:\Users\duong\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\AccessData.dll
+C:\Users\duong\Desktop\DeMoQLSV1\BusinessEntity\bin\Debug\AccessData.pdb
+C:\Users\duong\Desktop\DeMoQLSV1\BusinessEntity\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\duong\Desktop\DeMoQLSV1\BusinessEntity\obj\Debug\BusinessEntity.dll
+C:\Users\duong\Desktop\DeMoQLSV1\BusinessEntity\obj\Debug\BusinessEntity.pdb
+C:\Users\duong\Desktop\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.dll.config
+C:\Users\duong\Desktop\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.dll
+C:\Users\duong\Desktop\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.pdb
+C:\Users\duong\Desktop\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.dll
+C:\Users\duong\Desktop\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.pdb
+C:\Users\duong\Desktop\BCCOng cu case\DeMo3LopC-\BusinessEntity\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\duong\Desktop\BCCOng cu case\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.dll
+C:\Users\duong\Desktop\BCCOng cu case\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.pdb
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.dll.config
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.dll
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.pdb
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.dll
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.pdb
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case\DeMo3LopC-\BusinessEntity\obj\Debug\ResolveAssemblyReference.cache
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.dll
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.pdb
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case(QLD C#)\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.dll.config
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case(QLD C#)\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.dll
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case(QLD C#)\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.pdb
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case(QLD C#)\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.dll
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case(QLD C#)\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.pdb
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case(QLD C#)\DeMo3LopC-\BusinessEntity\obj\Debug\ResolveAssemblyReference.cache
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case(QLD C#)\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.dll
+E:\Bai tap chuyen nghanh\Bai Tap lon_DL\BCCOng cu case(QLD C#)\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.pdb
+C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.dll.config
+C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.dll
+C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\bin\Debug\BusinessEntity.pdb
+C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.dll
+C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.pdb
+C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.csprojResolveAssemblyReference.cache
+C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.dll
+C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.pdb
