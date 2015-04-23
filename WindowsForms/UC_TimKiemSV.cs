@@ -30,10 +30,12 @@ namespace DeMoQLSV1
             btSua.Enabled = false;
             btXoa.Enabled = false;
             lbTg.Visible = false;
+            loadData();
         }
 
         private void loadComBo()
         {
+
             // load cbMalop
             cbML.DataSource = lp.ShowLop();
             cbML.DisplayMember = "MaLop";
@@ -42,22 +44,35 @@ namespace DeMoQLSV1
             colMaLop.DataSource = lp.ShowLop();
             colMaLop.DisplayMember = "TenLop";
             colMaLop.ValueMember = "MaLop";
+
+            
         }
 
         private void cbML_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadData();
         }
-
+        private void loadSVByMaLop()
+        {
+            string maLop = cbML.Text.ToString().Trim();
+            cbMaSV.DataSource = sv.GetSVByIdMaLop(maLop);
+            cbMaSV.DisplayMember = "MaSV";
+            cbMaSV.ValueMember = "MaSV";
+        }
         private void loadData()
         {
             // load colum Malop tren dgv  
             colMaLop.DataSource = lp.ShowLop();
             colMaLop.DisplayMember = "TenLop";
             colMaLop.ValueMember = "MaLop";
-
+           
             string keyML = cbML.Text;
             string keyMaSV = cbMaSV.Text;
+            if (keyML=="" && keyMaSV=="")
+            {
+                dgvSV.DataSource = tkSV.ShowData();
+                lbTg.Visible = false;
+            }
             if (keyML!= ""&& keyMaSV == "")
             {
                 dgvSV.DataSource = tkSV.GetSVByIdMaLop(keyML);
@@ -96,6 +111,8 @@ namespace DeMoQLSV1
 
         private void cbML_SelectedValueChanged(object sender, EventArgs e)
         {
+           
+            cbMaSV.ResetText();
             string key = cbML.SelectedValue != null ? cbML.SelectedValue.ToString() : string.Empty;
             cbMaSV.DataSource = sv.GetSVByIdMaLop(key);
             cbMaSV.ValueMember = "MaSV";
@@ -113,14 +130,14 @@ namespace DeMoQLSV1
         private void dgvSV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int vt = dgvSV.CurrentCell.RowIndex;
-            cbMaSV.Text = dgvSV.Rows[vt].Cells["MaSV"].Value.ToString();
-            txtSinhVien.Text = dgvSV.Rows[vt].Cells["TenSV"].Value.ToString();
-            cbGT.Text = dgvSV.Rows[vt].Cells["GioiTinh"].Value.ToString();
-            txtSDT.Text = dgvSV.Rows[vt].Cells["SDT"].Value.ToString();
-            txtDiaChi.Text = dgvSV.Rows[vt].Cells["DiaChi"].Value.ToString();
-            txtEmail.Text = dgvSV.Rows[vt].Cells["Email"].Value.ToString();
-            dtPickerNgaySinh.Text = dgvSV.Rows[vt].Cells["NgaySinh"].Value.ToString();
-            cbML.Text = dgvSV.Rows[vt].Cells["colMaLop"].Value.ToString();
+            cbMaSV.Text = dgvSV.Rows[vt].Cells["MaSV"].Value.ToString().Trim();
+            txtSinhVien.Text = dgvSV.Rows[vt].Cells["TenSV"].Value.ToString().Trim();
+            cbGT.Text = dgvSV.Rows[vt].Cells["GioiTinh"].Value.ToString().Trim();
+            txtSDT.Text = dgvSV.Rows[vt].Cells["SDT"].Value.ToString().Trim();
+            txtDiaChi.Text = dgvSV.Rows[vt].Cells["DiaChi"].Value.ToString().Trim();
+            txtEmail.Text = dgvSV.Rows[vt].Cells["Email"].Value.ToString().Trim();
+            dtPickerNgaySinh.Text = dgvSV.Rows[vt].Cells["NgaySinh"].Value.ToString().Trim();
+            cbML.Text = dgvSV.Rows[vt].Cells["colMaLop"].Value.ToString().Trim();
             btSua.Enabled = true;
             btXoa.Enabled = true;
         }
@@ -133,22 +150,25 @@ namespace DeMoQLSV1
         {
            
             btSua.Enabled = false;
-            btXoa.Enabled = false;
-            cbML.ResetText();
-            cbML.SelectedIndex = -1;
-            cbMaSV.ResetText();
-            cbMaSV.SelectedIndex = -1;
-            cbML.Text = "";
-         
-            cbGT.Text = null;
-          
+            btXoa.Enabled = false;                   
+            cbGT.Text = null;          
             txtSinhVien.Text = "";
             txtSDT.Text = "";
             txtDiaChi.Text = "";
             txtEmail.Text = "";
-
-            loadData();
+            cbML.Text = "";
+            cbMaSV.Text = "";
+          
+            cbML.SelectedIndex = -1;
+       
+            cbMaSV.SelectedIndex = -1;
+            
+           
             lbTg.Visible = false;
+            dgvSV.DataSource = tkSV.ShowData();
+            cbMaSV.ResetText();
+            cbML.ResetText();
+            
         }
 
         private void cbML_MouseClick(object sender, MouseEventArgs e)
@@ -165,6 +185,7 @@ namespace DeMoQLSV1
                 string strMaSV = cbMaSV.Text;
                 sv.DeleteSV(strMaSV);
                 MessageBox.Show("Xóa sinh viên có tên là :  " + this.txtSinhVien.Text + " thành công");
+                loadSVByMaLop();
                 string keyML = cbML.Text;
                 string keyMaSV = cbMaSV.Text;
                 if (keyML != "" && keyMaSV != "")
@@ -201,6 +222,7 @@ namespace DeMoQLSV1
             txtDiaChi.Text = "";
             txtEmail.Text = "";
             dtPickerNgaySinh.Text = null;
+            loadData();
         }
 
         private void btSua_Click(object sender, EventArgs e)
@@ -225,9 +247,9 @@ namespace DeMoQLSV1
                     }
                     else
                     {
-                        int vt = dgvSV.CurrentRow.Index;
-                        string madk = dgvSV.Rows[vt].Cells["MaSV"].Value.ToString().Trim();
-                        sv.UpdateSV(madk, cbMaSV.SelectedValue.ToString(), txtSinhVien.Text.Trim(), cbGT.SelectedItem.ToString().Trim(),
+                        string madk = cbMaSV.Text.Trim();
+                        string maSV = cbMaSV.Text.Trim();
+                        sv.UpdateSV(madk, maSV, txtSinhVien.Text.Trim(), cbGT.SelectedItem.ToString().Trim(),
                                     Int32.Parse(txtSDT.Text.Trim()), txtDiaChi.Text.Trim(), txtEmail.Text.Trim(), dtPickerNgaySinh.Value, cbML.SelectedValue.ToString().Trim());
                         MessageBox.Show(" sửa sinh viên " + txtSinhVien.Text + " có mã " + cbMaSV.Text + " !!! thành công  ");
                         loadData();

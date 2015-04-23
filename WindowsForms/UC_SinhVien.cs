@@ -125,8 +125,8 @@ namespace DeMoQLSV1
                 }
                 else
                 {
-                    sv.InsertSV(txtMSV.Text.Trim(), txtSinhVien.Text.Trim(), cbGT.SelectedItem.ToString().Trim(),
-                                Int32.Parse(txtSDT.Text.Trim()), txtDiaChi.Text.Trim(), txtEmail.Text.Trim(), dtPickerNgaySinh.Value, cbMaL.SelectedValue.ToString().Trim());
+                    sv.InsertSV(txtMSV.Text.ToString().Trim(), txtSinhVien.Text.ToString().Trim(), cbGT.SelectedItem.ToString().Trim(),
+                                Int32.Parse(txtSDT.Text.Trim()), txtDiaChi.Text.ToString().Trim(), txtEmail.Text.ToString().Trim(), dtPickerNgaySinh.Value, cbMaL.SelectedValue.ToString().Trim());
                     MessageBox.Show(" thêm sinh viên " + txtSinhVien.Text + " có mã " + txtMSV.Text + " !!! thành công  ");
                     loadData();
                     btThem.Enabled = false;
