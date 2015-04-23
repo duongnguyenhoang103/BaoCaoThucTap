@@ -69,6 +69,7 @@
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.wizard1 = new DevComponents.DotNetBar.Wizard();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSV)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -452,11 +453,49 @@
             this.txtEmail.Size = new System.Drawing.Size(118, 20);
             this.txtEmail.TabIndex = 31;
             // 
+            // wizard1
+            // 
+            this.wizard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wizard1.FinishButtonTabIndex = 3;
+            // 
+            // 
+            // 
+            this.wizard1.FooterStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.wizard1.FooterStyle.BackColorGradientAngle = 90;
+            this.wizard1.FooterStyle.BorderBottomWidth = 1;
+            this.wizard1.FooterStyle.BorderColor = System.Drawing.SystemColors.Control;
+            this.wizard1.FooterStyle.BorderLeftWidth = 1;
+            this.wizard1.FooterStyle.BorderRightWidth = 1;
+            this.wizard1.FooterStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Etched;
+            this.wizard1.FooterStyle.BorderTopColor = System.Drawing.SystemColors.Control;
+            this.wizard1.FooterStyle.BorderTopWidth = 1;
+            this.wizard1.FooterStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.wizard1.FooterStyle.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.wizard1.HeaderCaptionFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // 
+            // 
+            this.wizard1.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.wizard1.HeaderStyle.BackColorGradientAngle = 90;
+            this.wizard1.HeaderStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Etched;
+            this.wizard1.HeaderStyle.BorderBottomWidth = 1;
+            this.wizard1.HeaderStyle.BorderColor = System.Drawing.SystemColors.Control;
+            this.wizard1.HeaderStyle.BorderLeftWidth = 1;
+            this.wizard1.HeaderStyle.BorderRightWidth = 1;
+            this.wizard1.HeaderStyle.BorderTopWidth = 1;
+            this.wizard1.HeaderStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.wizard1.HeaderStyle.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.wizard1.Location = new System.Drawing.Point(0, 272);
+            this.wizard1.Name = "wizard1";
+            this.wizard1.Size = new System.Drawing.Size(830, 269);
+            this.wizard1.TabIndex = 32;
+            // 
             // frmSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 541);
+            this.Controls.Add(this.wizard1);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtDiaChi);
@@ -535,6 +574,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaLop;
+        private DevComponents.DotNetBar.Wizard wizard1;
     }
 }
 

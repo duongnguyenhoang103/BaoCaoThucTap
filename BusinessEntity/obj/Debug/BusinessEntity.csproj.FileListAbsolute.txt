@@ -53,3 +53,11 @@ C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\bin\Debug\AccessData.pdb
 C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.csprojResolveAssemblyReference.cache
 C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.dll
 C:\Users\duong\Desktop\DeMo3LopC-\BusinessEntity\obj\Debug\BusinessEntity.pdb
+C:\Users\duong\Desktop\BaoCaoThucTap\BusinessEntity\bin\Debug\BusinessEntity.dll.config
+C:\Users\duong\Desktop\BaoCaoThucTap\BusinessEntity\bin\Debug\BusinessEntity.dll
+C:\Users\duong\Desktop\BaoCaoThucTap\BusinessEntity\bin\Debug\BusinessEntity.pdb
+C:\Users\duong\Desktop\BaoCaoThucTap\BusinessEntity\bin\Debug\AccessData.dll
+C:\Users\duong\Desktop\BaoCaoThucTap\BusinessEntity\bin\Debug\AccessData.pdb
+C:\Users\duong\Desktop\BaoCaoThucTap\BusinessEntity\obj\Debug\BusinessEntity.csprojResolveAssemblyReference.cache
+C:\Users\duong\Desktop\BaoCaoThucTap\BusinessEntity\obj\Debug\BusinessEntity.dll
+C:\Users\duong\Desktop\BaoCaoThucTap\BusinessEntity\obj\Debug\BusinessEntity.pdb

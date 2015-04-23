@@ -53,6 +53,7 @@ namespace DeMoQLSV1
             loadCombox();
             cbMaKhoa.ResetText();
             cbMaKhoa.SelectedIndex = -1;
+            cbMaKhoa.Focus(); 
             bttNew.Visible = false;
             btSua.Enabled = false;
             btXoa.Enabled = false;
@@ -87,6 +88,7 @@ namespace DeMoQLSV1
         {
             // load lai cb sau khi UC_Khoa thay đổi
             loadCombox();
+            cbMaKhoa.Text = "";
         }
 
         private void UC_Nghanh_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -151,12 +153,20 @@ namespace DeMoQLSV1
             {
                 try
                 {
-                    int vt = dgvNganh.CurrentCell.RowIndex;
-                    string madk = dgvNganh.Rows[vt].Cells[0].Value.ToString();                    
-                    nghanh.UpdateNghanh(madk, txtMaNghanh.Text, txtTenNghanh.Text, Int32.Parse(txtSoL.Text), cbMaKhoa.SelectedValue.ToString(), Int32.Parse(txtSDT.Text), txtEmail.Text, txtDiaChi.Text);
-                    MessageBox.Show("Sửa nghành " + this.txtMaNghanh.Text + " thành công");
-                    //loadData();
-                    Reset();
+                    if (DialogResult.Yes==MessageBox.Show("Bạn có muốn sửa thông tin nghành này không ?","Thông báo",MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                    {
+                        int vt = dgvNganh.CurrentCell.RowIndex;
+                        string madk = dgvNganh.Rows[vt].Cells[0].Value.ToString();
+                        nghanh.UpdateNghanh(madk, txtMaNghanh.Text, txtTenNghanh.Text, Int32.Parse(txtSoL.Text), cbMaKhoa.SelectedValue.ToString(), Int32.Parse(txtSDT.Text), txtEmail.Text, txtDiaChi.Text);
+                        MessageBox.Show("Sửa nghành " + this.txtMaNghanh.Text + " thành công");
+                        //loadData();
+                        Reset();
+                    }
+                    else
+                    {
+                        return;
+                    }
+                   
                 }
                 catch
                 {

@@ -47,8 +47,7 @@ namespace DeMoQLSV1
                     {                
                         lbChekc.Visible = false;
                         string dk = txtDN.Text.Trim();
-                        string tk = txtDN.Text.Trim();
-                        string mk = txtMK.Text.Trim();
+                        string tk = txtDN.Text.Trim();                       
                         string mkNew = txtMkNew.Text.Trim(); 
                         if (DialogResult.Yes==MessageBox.Show("Bạn có muốn thay đổi mật khẩu ?","Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Question))
                         {
@@ -89,6 +88,26 @@ namespace DeMoQLSV1
             txtDN.Text = NguoiDungBE.TaiKhoan; // lấy tên ĐN từ hệ thống
             lbChekc.Visible = false;
         }
+
+        private void txtMK_Leave(object sender, EventArgs e)
+        {
+            bool kq = nguoidg.CheckLogin(txtDN.Text.Trim(), txtMK.Text.Trim());
+            if (kq == true)
+            {
+                lbChekc.Visible = false;
+            }
+            else
+            {
+                lbChekc.Visible = true;
+                lbChekc.Text = "không đúng";
+                lbChekc.ForeColor = Color.BlueViolet;
+                lbChekc.Font = new Font(lbChekc.Font, FontStyle.Italic);
+                txtMK.Focus();
+                txtMK.ResetText();
+                return;
+            }
+        }
+
        
     }
 }

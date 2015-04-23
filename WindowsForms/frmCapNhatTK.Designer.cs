@@ -30,14 +30,14 @@
         {
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.txtMK = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbChekc = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.txtMkNew = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.txtMK = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtDN = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.txtMkNew = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.panelEx1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -48,11 +48,11 @@
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonX1.ForeColor = System.Drawing.Color.Red;
-            this.buttonX1.Location = new System.Drawing.Point(171, 184);
+            this.buttonX1.Location = new System.Drawing.Point(166, 177);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 2, 2, 12);
             this.buttonX1.Size = new System.Drawing.Size(96, 26);
-            this.buttonX1.TabIndex = 4;
+            this.buttonX1.TabIndex = 3;
             this.buttonX1.Text = "Lưu";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
@@ -60,13 +60,13 @@
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.panelEx1.Controls.Add(this.txtMkNew);
+            this.panelEx1.Controls.Add(this.txtMK);
             this.panelEx1.Controls.Add(this.panel3);
+            this.panelEx1.Controls.Add(this.txtDN);
             this.panelEx1.Controls.Add(this.buttonX1);
             this.panelEx1.Controls.Add(this.labelX3);
-            this.panelEx1.Controls.Add(this.txtMkNew);
             this.panelEx1.Controls.Add(this.labelX2);
-            this.panelEx1.Controls.Add(this.txtMK);
-            this.panelEx1.Controls.Add(this.txtDN);
             this.panelEx1.Controls.Add(this.labelX1);
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
@@ -81,65 +81,37 @@
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 1;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.lbChekc);
-            this.panel3.Location = new System.Drawing.Point(328, 77);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 25);
-            this.panel3.TabIndex = 22;
-            // 
-            // lbChekc
-            // 
-            this.lbChekc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbChekc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbChekc.Location = new System.Drawing.Point(3, 2);
-            this.lbChekc.Name = "lbChekc";
-            this.lbChekc.Size = new System.Drawing.Size(90, 22);
-            this.lbChekc.TabIndex = 1;
-            this.lbChekc.Text = ".";
-            // 
-            // labelX3
-            // 
-            this.labelX3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(53, 127);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(124, 23);
-            this.labelX3.TabIndex = 3;
-            this.labelX3.Text = "Mật khẩu mới";
-            // 
-            // txtMkNew
-            // 
-            this.txtMkNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMkNew.Location = new System.Drawing.Point(183, 126);
-            this.txtMkNew.Name = "txtMkNew";
-            this.txtMkNew.Size = new System.Drawing.Size(139, 24);
-            this.txtMkNew.TabIndex = 3;
-            this.txtMkNew.UseSystemPasswordChar = true;
-            // 
-            // labelX2
-            // 
-            this.labelX2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(53, 77);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(106, 23);
-            this.labelX2.TabIndex = 3;
-            this.labelX2.Text = "Mật khẩu cũ";
-            // 
             // txtMK
             // 
             // 
             // 
             // 
             this.txtMK.Border.Class = "TextBoxBorder";
-            this.txtMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMK.Location = new System.Drawing.Point(183, 78);
+            this.txtMK.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMK.Location = new System.Drawing.Point(166, 77);
             this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(139, 24);
-            this.txtMK.TabIndex = 2;
-            this.txtMK.UseSystemPasswordChar = true;
+            this.txtMK.PasswordChar = '*';
+            this.txtMK.Size = new System.Drawing.Size(140, 25);
+            this.txtMK.TabIndex = 1;
+            this.txtMK.Leave += new System.EventHandler(this.txtMK_Leave);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lbChekc);
+            this.panel3.Location = new System.Drawing.Point(312, 60);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(118, 62);
+            this.panel3.TabIndex = 22;
+            // 
+            // lbChekc
+            // 
+            this.lbChekc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChekc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbChekc.Location = new System.Drawing.Point(3, 13);
+            this.lbChekc.Name = "lbChekc";
+            this.lbChekc.Size = new System.Drawing.Size(105, 31);
+            this.lbChekc.TabIndex = 1;
+            this.lbChekc.Text = ".";
             // 
             // txtDN
             // 
@@ -147,21 +119,55 @@
             // 
             // 
             this.txtDN.Border.Class = "TextBoxBorder";
-            this.txtDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDN.Location = new System.Drawing.Point(182, 29);
+            this.txtDN.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDN.Location = new System.Drawing.Point(166, 26);
             this.txtDN.Name = "txtDN";
-            this.txtDN.Size = new System.Drawing.Size(139, 24);
-            this.txtDN.TabIndex = 1;
+            this.txtDN.ReadOnly = true;
+            this.txtDN.Size = new System.Drawing.Size(140, 25);
+            this.txtDN.TabIndex = 33;
+            // 
+            // labelX3
+            // 
+            this.labelX3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX3.ForeColor = System.Drawing.Color.Black;
+            this.labelX3.Location = new System.Drawing.Point(54, 127);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(106, 23);
+            this.labelX3.TabIndex = 3;
+            this.labelX3.Text = "Mật khẩu mới";
+            // 
+            // labelX2
+            // 
+            this.labelX2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.ForeColor = System.Drawing.Color.Black;
+            this.labelX2.Location = new System.Drawing.Point(54, 77);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(106, 23);
+            this.labelX2.TabIndex = 3;
+            this.labelX2.Text = "Mật khẩu cũ";
             // 
             // labelX1
             // 
-            this.labelX1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(53, 28);
+            this.labelX1.Location = new System.Drawing.Point(54, 28);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(106, 23);
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "Tài khoản";
+            // 
+            // txtMkNew
+            // 
+            // 
+            // 
+            // 
+            this.txtMkNew.Border.Class = "TextBoxBorder";
+            this.txtMkNew.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMkNew.Location = new System.Drawing.Point(166, 125);
+            this.txtMkNew.Name = "txtMkNew";
+            this.txtMkNew.PasswordChar = '*';
+            this.txtMkNew.Size = new System.Drawing.Size(140, 25);
+            this.txtMkNew.TabIndex = 2;
             // 
             // frmCapNhatTK
             // 
@@ -185,12 +191,12 @@
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.PanelEx panelEx1;
         private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtMK;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtDN;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtMkNew;
         private System.Windows.Forms.Panel panel3;
         private DevComponents.DotNetBar.LabelX lbChekc;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtMK;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtDN;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtMkNew;
     }
 }

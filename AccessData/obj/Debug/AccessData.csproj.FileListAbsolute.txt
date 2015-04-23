@@ -33,3 +33,8 @@ C:\Users\duong\Desktop\DeMo3LopC-\AccessData\bin\Debug\AccessData.dll
 C:\Users\duong\Desktop\DeMo3LopC-\AccessData\bin\Debug\AccessData.pdb
 C:\Users\duong\Desktop\DeMo3LopC-\AccessData\obj\Debug\AccessData.dll
 C:\Users\duong\Desktop\DeMo3LopC-\AccessData\obj\Debug\AccessData.pdb
+C:\Users\duong\Desktop\BaoCaoThucTap\AccessData\bin\Debug\AccessData.dll.config
+C:\Users\duong\Desktop\BaoCaoThucTap\AccessData\bin\Debug\AccessData.dll
+C:\Users\duong\Desktop\BaoCaoThucTap\AccessData\bin\Debug\AccessData.pdb
+C:\Users\duong\Desktop\BaoCaoThucTap\AccessData\obj\Debug\AccessData.dll
+C:\Users\duong\Desktop\BaoCaoThucTap\AccessData\obj\Debug\AccessData.pdb

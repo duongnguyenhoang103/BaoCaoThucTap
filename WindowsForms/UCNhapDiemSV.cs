@@ -48,6 +48,8 @@ namespace DeMoQLSV1
             lbTg.Visible = false;
             btSua.Visible = false;
             btXoa.Visible = false;
+            btSave.Enabled = false;
+            btReset.Enabled = false;
         }
         private void dgvDiem_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -68,6 +70,8 @@ namespace DeMoQLSV1
             string keyHocKi = cbHocKi.Text;
             if (!string.IsNullOrEmpty(key) && !string.IsNullOrEmpty(keyMaMH) && !string.IsNullOrEmpty(keyHocKi))        
             {
+                btSave.Enabled = true;
+                btReset.Enabled = true;
                 DataTable dt = ndiem.GetMaSVByMaLop(key);
                 var lst = new List<NhapDiemSV_BE>();
                 for (int i = 0; i < dt.Rows.Count; i++)
@@ -315,6 +319,8 @@ namespace DeMoQLSV1
             cbMH.ResetText();
             cbHocKi.ResetText();
             GetSVByCb();
+            btReset.Enabled = false;
+            btSave.Enabled = false;
         }
 
        

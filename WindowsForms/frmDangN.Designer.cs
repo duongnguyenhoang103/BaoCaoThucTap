@@ -32,9 +32,9 @@
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.txtMK = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtDN = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.txtDN = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtMK = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.panelEx1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,11 +44,11 @@
             this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonX2.ForeColor = System.Drawing.Color.Red;
-            this.buttonX2.Location = new System.Drawing.Point(196, 158);
+            this.buttonX2.Location = new System.Drawing.Point(201, 160);
             this.buttonX2.Name = "buttonX2";
             this.buttonX2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 2, 2, 12);
-            this.buttonX2.Size = new System.Drawing.Size(96, 35);
-            this.buttonX2.TabIndex = 21;
+            this.buttonX2.Size = new System.Drawing.Size(96, 22);
+            this.buttonX2.TabIndex = 4;
             this.buttonX2.Text = "Thoát";
             this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
@@ -58,11 +58,11 @@
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonX1.ForeColor = System.Drawing.Color.Red;
-            this.buttonX1.Location = new System.Drawing.Point(64, 158);
+            this.buttonX1.Location = new System.Drawing.Point(69, 160);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(12, 2, 2, 12);
-            this.buttonX1.Size = new System.Drawing.Size(96, 35);
-            this.buttonX1.TabIndex = 20;
+            this.buttonX1.Size = new System.Drawing.Size(96, 22);
+            this.buttonX1.TabIndex = 3;
             this.buttonX1.Text = "Đăng nhập";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
@@ -70,11 +70,11 @@
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.panelEx1.Controls.Add(this.txtMK);
+            this.panelEx1.Controls.Add(this.txtDN);
             this.panelEx1.Controls.Add(this.buttonX2);
             this.panelEx1.Controls.Add(this.buttonX1);
             this.panelEx1.Controls.Add(this.labelX2);
-            this.panelEx1.Controls.Add(this.txtMK);
-            this.panelEx1.Controls.Add(this.txtDN);
             this.panelEx1.Controls.Add(this.labelX1);
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
@@ -91,26 +91,23 @@
             // 
             // labelX2
             // 
-            this.labelX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(53, 92);
+            this.labelX2.Location = new System.Drawing.Point(53, 97);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(75, 23);
             this.labelX2.TabIndex = 3;
             this.labelX2.Text = "Mật khẩu";
             // 
-            // txtMK
+            // labelX1
             // 
-            // 
-            // 
-            // 
-            this.txtMK.Border.Class = "TextBoxBorder";
-            this.txtMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMK.Location = new System.Drawing.Point(157, 97);
-            this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(140, 24);
-            this.txtMK.TabIndex = 2;
-            this.txtMK.UseSystemPasswordChar = true;
+            this.labelX1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.ForeColor = System.Drawing.Color.Black;
+            this.labelX1.Location = new System.Drawing.Point(53, 46);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(75, 23);
+            this.labelX1.TabIndex = 0;
+            this.labelX1.Text = "Tài khoản";
             // 
             // txtDN
             // 
@@ -118,21 +115,24 @@
             // 
             // 
             this.txtDN.Border.Class = "TextBoxBorder";
-            this.txtDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDN.Location = new System.Drawing.Point(157, 46);
+            this.txtDN.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDN.Location = new System.Drawing.Point(157, 44);
             this.txtDN.Name = "txtDN";
-            this.txtDN.Size = new System.Drawing.Size(144, 24);
+            this.txtDN.Size = new System.Drawing.Size(140, 25);
             this.txtDN.TabIndex = 1;
             // 
-            // labelX1
+            // txtMK
             // 
-            this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(53, 41);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(75, 23);
-            this.labelX1.TabIndex = 0;
-            this.labelX1.Text = "Tài khoản";
+            // 
+            // 
+            // 
+            this.txtMK.Border.Class = "TextBoxBorder";
+            this.txtMK.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMK.Location = new System.Drawing.Point(157, 95);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.PasswordChar = '*';
+            this.txtMK.Size = new System.Drawing.Size(140, 25);
+            this.txtMK.TabIndex = 2;
             // 
             // frmDangN
             // 
@@ -156,8 +156,8 @@
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.PanelEx panelEx1;
         private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.Controls.TextBoxX txtMK;
         private DevComponents.DotNetBar.Controls.TextBoxX txtDN;
-        private DevComponents.DotNetBar.LabelX labelX1;
     }
 }
