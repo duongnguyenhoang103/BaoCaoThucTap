@@ -48,8 +48,8 @@ namespace DeMoQLSV1
                 {
                     bool kq = nguoidg.CheckLogin(txtDN.Text.Trim(), txtMK.Text.Trim());
                     if (kq == true)
-                    {
-                        NguoiDungBE.TaiKhoan = txtDN.Text;
+                    {                     
+                        NguoiDungBE.TaiKhoan = txtDN.Text.ToString(); // truyền dl qua txtDN
                         if (txtDN.Text.ToUpper() == "admin" || txtDN.Text.ToLower() == "admin")
                         {
                             main_from.showMenu();
