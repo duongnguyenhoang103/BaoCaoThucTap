@@ -35,12 +35,12 @@ namespace BusinessEntity
        }
        public void InsertSV(string masv, string tensv, string gioitinh, int sdt, string diaChi, string email, DateTime ngaysinh, string malop)
        {
-           string sql = " INSERT INTO tbl_SINHVIEN VALUES ('" + masv + "', N'" + tensv + "',N'" + gioitinh + "','" + sdt + "', N'"+diaChi +"', '"+email+"' ,'" + ngaysinh + "','" + malop + "') ";           
+           string sql = " INSERT INTO tbl_SINHVIEN VALUES ( N'"+masv+"', N'"+tensv+"',N'"+gioitinh+"','"+sdt+"', N'"+diaChi +"', '"+email+"' ,'"+ngaysinh+"','"+malop+"') ";           
            da.ExcuteNonQuery1(sql);
        }
        public void UpdateSV(string madk , string masv, string tensv, string gioitinh, int sdt, string diaChi, string email, DateTime ngaysinh, string malop)
        {
-           string sql = " Update tbl_SINHVIEN SET MaSV ='"+masv+"', TenSV =N'"+tensv+"', GioiTinh= N'"+gioitinh+"', SDT='"+sdt +"', DiaChi= N'"+diaChi+"', Email='"+email +"', NgaySinh='"+ngaysinh +"', MaLop ='"+malop+"' WHERE MaSV ='"+madk+"' ";
+           string sql = " Update tbl_SINHVIEN SET MaSV = N'" + masv.Trim() + "', TenSV =N'" + tensv.Trim() + "', GioiTinh= N'" + gioitinh.Trim() + "', SDT='" + sdt + "', DiaChi= N'" + diaChi.Trim() + "', Email= N'" + email.Trim() + "', NgaySinh='" + ngaysinh + "', MaLop = N'" + malop.Trim() + "' WHERE MaSV =N'" + madk.Trim() + "' ";
            da.ExcuteNonQuery1(sql);
        }
        public DataTable GetSVByIdMaLop (string key)

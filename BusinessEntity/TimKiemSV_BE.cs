@@ -10,7 +10,14 @@ namespace BusinessEntity
     public  class TimKiemSV_BE
     {
         DataConnect kn = new DataConnect();
-
+        public DataTable ShowData()
+        {
+            string sql = " select Distinct sv.MaSV,sv.TenSV,sv.GioiTinh,sv.SDT, sv.DiaChi, sv.Email ,sv.NgaySinh,sv.MaLop from tbl_SINHVIEN  sv ,tbl_LOP lp "
+                           + " Where sv.MaLop = lp.MaLop and sv.MaLop = '' and MaSV = '' ";
+            DataTable dt = new DataTable();
+            dt = kn.GetTable(sql);
+            return dt;
+        }
         public DataTable GetSVByIdMaLop(string key)
         {
 
