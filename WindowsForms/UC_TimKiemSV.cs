@@ -19,6 +19,7 @@ namespace DeMoQLSV1
         LopBE lp = new LopBE();
         SinhVienBE sv = new SinhVienBE();
         TimKiemSV_BE tkSV = new TimKiemSV_BE();
+
         private void UC_TimKiemSV_Load(object sender, EventArgs e)
         {
 
@@ -32,7 +33,6 @@ namespace DeMoQLSV1
             lbTg.Visible = false;
             loadData();
         }
-
         private void loadComBo()
         {
 
@@ -47,7 +47,6 @@ namespace DeMoQLSV1
 
             
         }
-
         private void cbML_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadData();
@@ -108,7 +107,6 @@ namespace DeMoQLSV1
                 }
             }
         }
-
         private void cbML_SelectedValueChanged(object sender, EventArgs e)
         {
            
@@ -121,12 +119,10 @@ namespace DeMoQLSV1
             cbMaSV.ResetText();
             cbMaSV.SelectedIndex = -1;
         }
-
         private void cbMaSV_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadData();
         }
-
         private void dgvSV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int vt = dgvSV.CurrentCell.RowIndex;
@@ -145,10 +141,8 @@ namespace DeMoQLSV1
         {
             
         }
-
         private void btReset_Click(object sender, EventArgs e)
-        {
-           
+        {           
             btSua.Enabled = false;
             btXoa.Enabled = false;                   
             cbGT.Text = null;          
@@ -157,25 +151,18 @@ namespace DeMoQLSV1
             txtDiaChi.Text = "";
             txtEmail.Text = "";
             cbML.Text = "";
-            cbMaSV.Text = "";
-          
-            cbML.SelectedIndex = -1;
-       
-            cbMaSV.SelectedIndex = -1;
-            
-           
+            cbMaSV.Text = "";          
+            cbML.SelectedIndex = -1;       
+            cbMaSV.SelectedIndex = -1;                       
             lbTg.Visible = false;
             dgvSV.DataSource = tkSV.ShowData();
             cbMaSV.ResetText();
-            cbML.ResetText();
-            
+            cbML.ResetText();            
         }
-
         private void cbML_MouseClick(object sender, MouseEventArgs e)
         {
             loadComBo();
         }
-
         private void btXoa_Click(object sender, EventArgs e)
         {
 
@@ -208,7 +195,6 @@ namespace DeMoQLSV1
                 Reset();
             }
         }
-
         private void Reset()
         {
             btSua.Enabled = false; 
@@ -224,7 +210,6 @@ namespace DeMoQLSV1
             dtPickerNgaySinh.Text = null;
             loadData();
         }
-
         private void btSua_Click(object sender, EventArgs e)
         {
             try

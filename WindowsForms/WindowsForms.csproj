@@ -82,6 +82,13 @@
     <Reference Include="UIAutomationClient" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="frmCapNhatTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatTK.Designer.cs">
+      <DependentUpon>frmCapNhatTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeMoQLSVDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -257,6 +264,9 @@
     <Compile Include="UC_TimKiemSV.Designer.cs">
       <DependentUpon>UC_TimKiemSV.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmCapNhatTK.resx">
+      <DependentUpon>frmCapNhatTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

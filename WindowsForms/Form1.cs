@@ -184,6 +184,11 @@ namespace DeMoQLSV1
             AddNewTab("Tìm kiếm thông tin nghanh ", ucTKNganh);
         }
 
+        private void btItem_CapNhatTk_Click(object sender, EventArgs e)
+        {
+            frmCapNhatTK _frmCNTK = new frmCapNhatTK(this);
+            _frmCNTK.Show();
+        }
         private void buttonItem17_Click(object sender, EventArgs e)
         {
 
@@ -201,6 +206,7 @@ namespace DeMoQLSV1
             //Menu hệ thống
             LogOut_ribbonBar2.Enabled = true;
             LogIn_ribbonBar1.Enabled = false;
+            CapNhatTK_ribbonBar1.Visible = false;
             // Menu QUản lý
             QuanLy_ribbonTabItem2.Enabled = true;
                 QLNghanh_ribbonBar3.Enabled = true;
@@ -210,7 +216,7 @@ namespace DeMoQLSV1
                 QLGV_ribbonBar7.Enabled = true;
                 QLMH_ribbonBar8.Enabled = true;
                 QLD_ribbonBar9.Enabled = true;
-                QL_TaiKhoan.Enabled = true;
+                QL_TaiKhoan.Visible = true;
                 //Menu tìm kiếm
             TimKiem_ribbonTabItem3.Enabled = true;
                 TkSinhVien_ribbonBar10.Enabled = true;
@@ -231,6 +237,7 @@ namespace DeMoQLSV1
             LogOut_ribbonBar2.Enabled = true;
             LogIn_ribbonBar1.Enabled = false;
             LogOut_buttonItem18.Enabled = false;
+            CapNhatTK_ribbonBar1.Visible = true;
           //  LogIn_ribbonBar1.Enabled = true; 
             //Menu HeThong_ribbonTabItem1
            // LogOut_ribbonBar2.Enabled = false;
@@ -244,7 +251,7 @@ namespace DeMoQLSV1
                 QLGV_ribbonBar7.Enabled = false;
                 QLMH_ribbonBar8.Enabled = false;
                 QLD_ribbonBar9.Enabled = true;
-                QL_TaiKhoan.Enabled = false;
+                QL_TaiKhoan.Visible = false;
             //Menu tìm kiếm
            // TimKiem_ribbonTabItem3.Enabled = false;
                 TkSinhVien_ribbonBar10.Enabled = false;
@@ -263,6 +270,7 @@ namespace DeMoQLSV1
             QLD_ribbonBar9.Enabled = false;
             BcDiemThiSinhVien_ribbonBar12.Enabled = false;
             BcTKGiangVien_ribbonBar14.Visible = false;
+            CapNhatTK_ribbonBar1.Visible = false;
             frmDangN _frmLog = new frmDangN(this);
             _frmLog.ShowDialog();
             this.reportViewer1.RefreshReport();
@@ -282,6 +290,7 @@ namespace DeMoQLSV1
             hideMenu();
             QLD_ribbonBar9.Enabled = false;
             BcDiemThiSinhVien_ribbonBar12.Enabled = false;
+            CapNhatTK_ribbonBar1.Visible = false;
 
             frmDangN frm = new frmDangN(this);
             frm.ShowDialog(); 
@@ -311,6 +320,8 @@ namespace DeMoQLSV1
         {
 
         }
+
+       
 
       
 

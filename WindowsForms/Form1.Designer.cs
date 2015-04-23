@@ -96,6 +96,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.CapNhatTK_ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.btItem_CapNhatTk = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel3.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
@@ -112,9 +114,9 @@
             // ribbonControl1
             // 
             this.ribbonControl1.CaptionVisible = true;
+            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -148,6 +150,7 @@
             this.ribbonPanel3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ribbonPanel3.Size = new System.Drawing.Size(796, 97);
             this.ribbonPanel3.TabIndex = 3;
+            this.ribbonPanel3.Visible = false;
             // 
             // TkSinhVien_ribbonBar10
             // 
@@ -420,11 +423,11 @@
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ribbonPanel1.Size = new System.Drawing.Size(796, 97);
             this.ribbonPanel1.TabIndex = 1;
-            this.ribbonPanel1.Visible = false;
             // 
             // ribbonPanel5
             // 
             this.ribbonPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel5.Controls.Add(this.CapNhatTK_ribbonBar1);
             this.ribbonPanel5.Controls.Add(this.LogOut_ribbonBar2);
             this.ribbonPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ribbonPanel5.Location = new System.Drawing.Point(79, 0);
@@ -567,6 +570,7 @@
             // 
             // HeThong_ribbonTabItem1
             // 
+            this.HeThong_ribbonTabItem1.Checked = true;
             this.HeThong_ribbonTabItem1.Name = "HeThong_ribbonTabItem1";
             this.HeThong_ribbonTabItem1.Panel = this.ribbonPanel1;
             this.HeThong_ribbonTabItem1.Shortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlH);
@@ -583,7 +587,6 @@
             // 
             // TimKiem_ribbonTabItem3
             // 
-            this.TimKiem_ribbonTabItem3.Checked = true;
             this.TimKiem_ribbonTabItem3.Name = "TimKiem_ribbonTabItem3";
             this.TimKiem_ribbonTabItem3.Panel = this.ribbonPanel3;
             this.TimKiem_ribbonTabItem3.Shortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlShiftS);
@@ -855,6 +858,29 @@
             this.reportViewer1.Size = new System.Drawing.Size(396, 246);
             this.reportViewer1.TabIndex = 0;
             // 
+            // CapNhatTK_ribbonBar1
+            // 
+            this.CapNhatTK_ribbonBar1.AutoOverflowEnabled = true;
+            this.CapNhatTK_ribbonBar1.ContainerControlProcessDialogKey = true;
+            this.CapNhatTK_ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CapNhatTK_ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btItem_CapNhatTk});
+            this.CapNhatTK_ribbonBar1.Location = new System.Drawing.Point(79, 0);
+            this.CapNhatTK_ribbonBar1.Name = "CapNhatTK_ribbonBar1";
+            this.CapNhatTK_ribbonBar1.Size = new System.Drawing.Size(76, 91);
+            this.CapNhatTK_ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.CapNhatTK_ribbonBar1.TabIndex = 1;
+            this.CapNhatTK_ribbonBar1.Text = "...........";
+            // 
+            // btItem_CapNhatTk
+            // 
+            this.btItem_CapNhatTk.Image = ((System.Drawing.Image)(resources.GetObject("btItem_CapNhatTk.Image")));
+            this.btItem_CapNhatTk.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btItem_CapNhatTk.Name = "btItem_CapNhatTk";
+            this.btItem_CapNhatTk.SubItemsExpandWidth = 14;
+            this.btItem_CapNhatTk.Text = "<div align=\"center\" width=\"60\">Cập nhật tài khoản</div>";
+            this.btItem_CapNhatTk.Click += new System.EventHandler(this.btItem_CapNhatTk_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -958,5 +984,7 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private DevComponents.DotNetBar.RibbonBar QL_TaiKhoan;
         private DevComponents.DotNetBar.ButtonItem buttonItem17;
+        private DevComponents.DotNetBar.RibbonBar CapNhatTK_ribbonBar1;
+        private DevComponents.DotNetBar.ButtonItem btItem_CapNhatTk;
     }
 }

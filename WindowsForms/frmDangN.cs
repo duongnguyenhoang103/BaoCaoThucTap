@@ -12,13 +12,17 @@ namespace DeMoQLSV1
     public partial class frmDangN : Form
     {
         NguoiDungBE nguoidg = new NguoiDungBE();
+      
         public Form1 main_from;
         public frmDangN(Form1 f00)
         {
             InitializeComponent();
             main_from = f00;
         }
-      
+        public frmDangN()
+        {
+            InitializeComponent();
+        }
         private void frmDangN_Load(object sender, EventArgs e)
         {
 
@@ -45,6 +49,7 @@ namespace DeMoQLSV1
                     bool kq = nguoidg.CheckLogin(txtDN.Text.Trim(), txtMK.Text.Trim());
                     if (kq == true)
                     {
+                        NguoiDungBE.TaiKhoan = txtDN.Text;
                         if (txtDN.Text.ToUpper() == "admin" || txtDN.Text.ToLower() == "admin")
                         {
                             main_from.showMenu();
@@ -55,13 +60,7 @@ namespace DeMoQLSV1
                             main_from.hideMenu();
                             this.Close();
                         }
-                        // this.Close();
-                        //Form1 frm = new Form1();
-                        //frm.Show();//
-                        //main_from.showMenu();
-                        //this.Close();
-                        this.Dispose();
-
+                      
                     }
                     else
                     {
