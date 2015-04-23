@@ -30,13 +30,13 @@ namespace DeMoQLSV1
             {
                 if (txtDN.TextLength == 0)
                 {
-                    MessageBox.Show(" ban phai nhap tai khoan");
+                    MessageBox.Show(" ban phải nhập tài khoản");
                     txtDN.Focus();
                     return;
                 }
                 if (txtMK.TextLength == 0)
                 {
-                    MessageBox.Show(" mat khau khong dc de trong");
+                    MessageBox.Show(" mật khẩu không được để trống");
                     txtMK.Focus();
                     return;
                 }
@@ -65,13 +65,13 @@ namespace DeMoQLSV1
                     }
                     else
                     {
-                        MessageBox.Show("Bạn đã nhập sai tai khoan hoặc mat khau", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Bạn đã nhập sai tài khoản hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         txtDN.Focus();
                         return;
                     }
                 }
             }
-            catch (Exception ex) { MessageBox.Show(" Loi" + ex.Message); }
+            catch (Exception ex) { MessageBox.Show(" Lỗi" + ex.Message); }
         }
 
         private void buttonX2_Click(object sender, EventArgs e)
